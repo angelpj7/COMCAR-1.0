@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compra venta vehiculos</title>
+<link rel="stylesheet" href="css/AltaUsuarioEstilo.css">
+<script src="altausuariojavascript.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="Home.html"><img src="img/logo.png"
+				alt="Logo de la empresa"></a>
+		</div>
+		<div class="slogan">
+			<h2>Comprar nunca fue tan legal</h2>
+		</div>
+		<div class="buttons">
+			<a href="Login.html">
+				<button>Iniciar Sesión</button>
+			</a> <a href="AltaUsuario.html">
+				<button>Registrarse</button>
+			</a>
+		</div>
+	</header>
+
+	<div id="alta" class="alta">
+		<h2>Rellena todos los campo y pulsa enviar</h2>
+
+		<form name="AltaUsuario" action="AltaUsuarioServlet" method="post"
+			id="altas">
+			<ul class="lista">
+				<input type="hidden" id="id" name="id">
+				<li><label>Nombre: </label> <input type="text" name="nombre"
+					id="nombre"></li>
+				<li><label>Apellidos: </label> <input type="text"
+					name="apellidos" id="apellidos"></li>
+				<li><label>DNI: </label> <input type="text" name="dni" id="dni"></li>
+				<li><label>Email: </label> <input type="text" name="email"
+					id="email"></li>
+				<li><label>Telefono: </label> <input type="text" name="tel"
+					id="tel"></li>
+				<li><label>Direccion: </label> <input type="text"
+					name="direccion" id="direccion"></li>
+				<li><label>Usuario: </label> <input type="text" name="usuario"
+					id="username"></li>
+				<li><label>Password: </label> <input type="password"
+					name="password" id="pass"></li>
+				<label style="display: none;" id="labelAdmin">Admin: <select
+					id="admin" name="admin">
+						<option value="true">Si</option>
+						<option value="false" selected="selected">No</option>
+				</select>
+				</label>
+			</ul>
+			<input type="button" class="estiloboton"
+				onclick="validarFormulario()" value="Enviar">
+		</form>
+
+
+	</div>
+
+
+
+
+	<footer>
+		<p>COMCAR WEB</p>
+	</footer>
+
+
+
+</body>
+</html>

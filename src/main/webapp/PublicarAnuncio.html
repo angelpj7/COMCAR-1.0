@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra venta vehiculos</title>
+    <link rel="stylesheet" href="css/PublicarAnuncioEstilo.css">
+</head>
+<body>
+
+	
+	
+	<header>
+	  <div class="logo">
+    <a href="Home.html"><img src="img/logo.png" alt="Logo de la empresa"></a>
+  </div>
+	  <div class="slogan">
+	    <h2>Comprar nunca fue tan legal</h2>
+	  </div>
+	  <div class="buttons">
+	  <a href="Login.html">
+	    <button>Iniciar Sesión</button>
+	  </a>
+	   <a href="AltaUsuario.html">
+	    <button>Registrarse</button>
+	   </a>
+	  </div>
+	</header>
+	
+	
+	<div id = "alta" class="alta">
+      <h2>Rellena todos los campo y pulsa enviar</h2> 
+      
+	
+	<form name="PublicarAnuncio" action="PublicarAnuncioServlet" method="post">
+	
+		 <ul class="listaanuncio">
+		      <li><label>Título: </label> <input type="text" name="titulo"></li>
+		      <li><label>Descripción: </label> <input type="text" name="descripcion"></li>
+		      <li><label>Precio: </label> <input type="text" name="precio"></li>
+		      <li><label>Matrícula: </label> <input type="text" name="matricula"></li>
+		      <li><label>Marca: </label> <input type="text" name="marca"></li>
+		      <li><label>Modelo: </label> <input type="text" name="modelo"></li>
+		      <li><label>Año: </label> <input type="text" name="anio"></li>
+		      <li><label>Kilómetros: </label> <input type="text" name="km"></li>
+		      <li><label>Combustible: </label> <input type="text" name="combustible"></li>
+		      <li><label>Color: </label> <input type="text" name="color"></li>
+		</ul>
+		<input type="submit" class="estiloboton" value="Enviar">
+	
+	</form>
+		 
+        		
+</div>
+	
+	
+	
+
+	<footer>
+	  <p>COMCAR WEB</p>
+	</footer>
+	
+
+
+
+	</body>
+</html>
