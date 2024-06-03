@@ -56,67 +56,68 @@ window.addEventListener("DOMContentLoaded", function() {
 
 	}
 
+	let boton = document.getElementById("boton");
+	boton.addEventListener("click", function() {
+		validarFormulario();
+	});
+
 
 })
 
 
-
 function validarFormulario() {
-
 	let nombre = document.getElementById('nombre').value;
-	let apellidos = document.getElementById('nombre').value;
+	let apellidos = document.getElementById('apellidos').value;
 	let dni = document.getElementById('dni').value;
 	let email = document.getElementById('email').value;
-	let direccion = document.getElementById('nombre').value;
+	let direccion = document.getElementById('direccion').value;
 	let tel = document.getElementById('tel').value;
 	let username = document.getElementById('username').value;
 	let pass = document.getElementById('pass').value;
 
 	let ok = true;
 
-	if (nombre == "") {
+	if (nombre === "") {
 		ok = false;
 		document.getElementById('nombre').style.background = "red";
 	}
 
-	if (apellidos == "") {
+	if (apellidos === "") {
 		ok = false;
 		document.getElementById('apellidos').style.background = "red";
 	}
 
-	if (dni == "") {
+	if (dni === "") {
 		ok = false;
 		document.getElementById('dni').style.background = "red";
 	}
-	if (direccion == "") {
+
+	if (direccion === "") {
 		ok = false;
 		document.getElementById('direccion').style.background = "red";
 	}
 
-	if (email == "") {
+	if (email === "") {
 		ok = false;
 		document.getElementById('email').style.background = "red";
 	}
 
-	if (tel == "") {
+	if (tel === "") {
 		ok = false;
 		document.getElementById('tel').style.background = "red";
 	}
 
-	if (username == "") {
+	if (username === "") {
 		ok = false;
 		document.getElementById('username').style.background = "red";
 	}
 
-	if (pass == "") {
+	if (pass === "") {
 		ok = false;
 		document.getElementById('pass').style.background = "red";
 	}
-	if (ok == true) {
 
+	if (ok === true) {
 		document.getElementById("altas").submit();
-
 	}
-
 }
-
